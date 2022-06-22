@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary-color: #514A9D;
+$mean-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+
+.primary-color {
+    color: $primary-color;
+}
+.mean-box-shadow {
+    box-shadow: $mean-box-shadow;
+}
+
+// Mixins
+@mixin mean_background {
+    background: #24C6DC;  
+    background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  
+    background: linear-gradient(to left, #514A9D, #24C6DC);  
+}
+
+.mean_background {
+    @include mean_background();
+}
+
+
+//  ow carousel css 
+.owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    // background: red;
+    top: -255px;
+    width: 104% !important;
+    margin-left: -30px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: none !important;
+    display: flex;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+// arrow slick slider
+.positionned_arrow {
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+
+     &.fa-arrow-left  {
+        left: 5px;
+    }
+    &.fa-arrow-right {
+        right: 5px;   
+    }
+}
+
+// line under great titles
+.surligned {
+    // border-bottom: 2px solid red;
+    width: 6%;
+    margin: 10px auto;
+    @include mean_background();
+    height: 3px;
+}
+
+//  Media query
+@media only screen and (max-width: 567px) {
+    .owl-theme .owl-nav {
+        margin-left: 0px;
+        width: 100% !important;
+    }
+}

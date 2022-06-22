@@ -11,6 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { MapComponent } from './share/map/map.component';
 import { ReferencesComponent } from './share/references/references.component';
 import { SlideHomepageComponent } from './share/slide-homepage/slide-homepage.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SlideHomepageComponent } from './share/slide-homepage/slide-homepage.co
     SlideHomepageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

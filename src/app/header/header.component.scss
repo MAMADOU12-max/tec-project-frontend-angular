@@ -1,0 +1,26 @@
+@mixin mean_background {
+    background: #24C6DC;  
+    background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  
+    background: linear-gradient(to left, #514A9D, #24C6DC);  
+}
+
+a {
+    font-size:14px;
+    font-weight:700;
+    text-decoration: none;
+}
+.superNav, .navbar,.btn-customize {
+   @include mean_background();
+}
+.superNav {
+    font-size:13px;
+}
+// .form-control {
+//     outline:none !important;
+//     box-shadow: none !important;
+// }
+@media screen and (max-width:540px){
+    // .centerOnMobile {
+    //   text-align:center
+    // }
+}

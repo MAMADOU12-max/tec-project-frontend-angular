@@ -53,7 +53,7 @@ $(document).ready(function(){
     $('.actu-news_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         arrows: false,
         autoplay: false,
         nextArrow: '<i class="fa fa-arrow-left fa-2x mean_background text-white p-1 px-2 rounded-pill positionned_arrow"></i>',

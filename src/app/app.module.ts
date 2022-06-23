@@ -12,6 +12,8 @@ import { MapComponent } from './share/map/map.component';
 import { ReferencesComponent } from './share/references/references.component';
 import { SlideHomepageComponent } from './share/slide-homepage/slide-homepage.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ListProduitComponent } from './boutique/list-produit/list-produit.component';
+import { ProduitComponent } from './boutique/produit/produit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AppRoutingModule } from './app-routing.module';
     HomepageComponent,
     MapComponent,
     ReferencesComponent,
-    SlideHomepageComponent
+    SlideHomepageComponent,
+    ListProduitComponent,
+    ProduitComponent
   ],
   imports: [
     BrowserModule,

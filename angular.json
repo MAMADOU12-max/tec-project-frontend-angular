@@ -36,7 +36,8 @@
               "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/js/main.js"
             ]
           },
           "configurations": {
@@ -111,5 +112,8 @@
       }
     }
   },
-  "defaultProject": "tec-project-frontend-angular"
+  "defaultProject": "tec-project-frontend-angular",
+  "cli": {
+    "analytics": "0092704f-f138-4abf-b17e-df126c2f4eb7"
+  }
 }

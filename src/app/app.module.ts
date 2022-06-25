@@ -33,6 +33,9 @@ import { ProduitComponent } from './boutique/produit/produit.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyAcV5DOSUL5S02FONJ2ElReoFpYY6wkqc4'
+    // })
   ],
   providers: [],
   bootstrap: [AppComponent]
